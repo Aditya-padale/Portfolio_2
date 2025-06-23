@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💼 Abhijeet's Portfolio Website
+# 💼 Aditya's Portfolio Website
 
 </div>
 
@@ -32,9 +32,7 @@ A modern, responsive personal portfolio website showcasing my work as a full-sta
 
 ## 📸 Live Preview
 
-👉 [Live Demo](https://abhijeetbhale.github.io/Portfolio/)
+👉 [Live Demo]
 
-## 📸 Screenshot
 
-![Portfolio Website](https://github.com/abhijeetBhale/Portfolio/blob/4153aac777d27ad5cc2aaa4ded9a3b347b8c8d9e/assets/portfolio-ss.png)
 
