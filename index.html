@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio / Aditya Padale</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="assets/android-chrome-512x512.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div class="fixed right-6 top-1/2 transform -translate-y-1/2 h-64 w-1.5 bg-gray-700 rounded-full z-50 hidden sm:block">
+      <div id="scroll-indicator" class="bg-[#1DCD9F] h-0 w-full rounded-full transition-all duration-300 ease-out shadow-md shadow-[#1DCD9F]"></div>
+    </div>
+    <!-- Loading Animation -->
+    <div id="loading">
+      <div class="loading-text" id="name-loader">
+        <span data-text="A">A</span>
+        <span data-text="D">D</span>
+        <span data-text="I">I</span>
+        <span data-text="T">T</span>
+        <span data-text="Y">Y</span>
+        <span data-text="A">A</span>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="position-relative container-fluid min-vh-100 d-flex justify-content-center align-items-center text-white overflow-hidden" style="background-color: #000000">
+      <!-- Hero Particle Background -->
+      <div id="particles-hero" class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0"></div>
+
+      <!-- Hero Content -->
+      <div class="container text-center position-relative" style="z-index: 1">
+        <h1 class="display-4 fw-bold">
+          <span class="text-white me-2">Hi, I'm</span>
+          <button class="button" data-text="Aditya">
+            <span class="actual-text">&nbsp;Aditya&nbsp;</span>
+            <span aria-hidden="true" class="hover-text">&nbsp;Aditya&nbsp;</span>
+          </button>
+        </h1>
+        <p class="lead text-light mt-3">
+          Creative and detail-oriented developer focused on crafting smart, AI-powered, and visually engaging web experiences. With a strong foundation in AI development, I specialize in building intelligent tools using LangChain, Gemini APIs, Streamlit, and Python. Passionate about combining technology with real-world usability — from campus systems to social bio generators. I aim to grow as a developer while contributing to impactful tech that simplifies complex tasks.
+        </p>
+        <a href="#projects" class="shadow__btn mt-4">View Projects</a>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="bg-black text-white py-20 px-6">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 px-4">
+        <!-- Profile Image -->
+        <div class="flex-shrink-0 w-64 h-64 rounded-xl overflow-hidden shadow-lg grayscale hover:grayscale-0 transition duration-500" id="about-img">
+          <img src="./assets/Aditya.jpg" alt="Aditya Padale" class="w-full h-full object-cover" />
+        </div>
+        <!-- Text Content -->
+        <div class="max-w-2xl" id="about-text">
+          <h2 class="text-3xl md:text-4xl font-semibold leading-snug mb-4">
+            I’m <span class="text-[#1DCD9F] font-bold">Aditya Padale</span>, a creative and detail-oriented developer focused on crafting smart, AI-powered, and visually engaging web experiences.
+          </h2>
+          <p class="text-gray-300 text-lg leading-relaxed mb-6">
+            I'm currently pursuing my Bachelor of Engineering in Artificial Intelligence and Data Science at Annasaheb Dange College of Engineering and Technology, Ashta. I specialize in building intelligent tools using LangChain, Gemini APIs, Streamlit, and Python, transforming ideas into functional digital experiences using modern technologies.
+          </p>
+          <p class="text-gray-300 text-lg leading-relaxed mb-6">
+            I’m passionate about <span class="text-[#1DCD9F] font-bold">LangChain</span>, <span class="text-[#1DCD9F] font-bold">Gemini</span>, <span class="text-[#1DCD9F] font-bold">Streamlit</span>, <span class="text-[#1DCD9F] font-bold">Python</span>, and bringing smooth, responsive UIs to life with AI and performance in mind. Outside of code, I love AI experiments, reading tech blogs, and building microtools.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex space-x-5 mt-6 align-items-center justify-content-center md:justify-start">
+            <a href="https://www.linkedin.com/in/aditya-padale-alp" target="_blank" class="text-[#0a66c2] text-2xl hover:text-[#339af0] transition">
+              <img src="./assets/linkedin-logo.png" class="w-9 h-9" alt="linkedin-logo">
+            </a>
+            <a href="mailto:adityapadale25@gmail.com" class="text-white text-2xl hover:text-gray-400 transition">
+              <img src="./assets/mail-logo.png" class="w-9 h-9" alt="mail-logo">
+            </a>
+            <a href="https://github.com/Aditya-padale" target="_blank" class="text-white text-2xl hover:text-gray-400 transition">
+              <img src="./assets/github-logo.png" class="w-9 h-9" alt="github-logo">
+            </a>
+          </div>
+          <!-- Download Resume Button -->
+          <div class="flex align-items-center justify-content-center mt-8">
+            <a href="./assets/resume.pdf" download>
+              <button class="dbutton" type="dbutton">
+                <span class="dbutton__text">Download</span>
+                <span class="dbutton__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Journey Section -->
+    <section id="journey" class="bg-black text-white py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold mb-16 text-center text-[#1DCD9F]">My Journey</h2>
+        <div class="relative">
+          <!-- Vertical Line -->
+          <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#1DCD9F]"></div>
+
+          <!-- Timeline Card 1 - Right -->
+          <div class="relative mb-16 md:mb-24 md:flex justify-end">
+            <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+            <div class="md:w-1/2"></div>
+            <div class="md:w-1/2 md:pl-10">
+              <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+                <h3 class="text-xl font-semibold text-[#1DCD9F]">Internship at @Zanvar Group Of industries</h3>
+                <span class="text-sm text-gray-400">June 2025 - July 2025</span>
+                <p class="mt-2 text-gray-300">Completed an internship at a vehicle manufacturing company under the Zanvar Group of Industries. Built an AI-powered chatbot that provided detailed information on vehicle parts based on user queries.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Card 2 - Left -->
+          <div class="relative mb-16 md:mb-24 md:flex justify-start">
+            <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+            <div class="md:w-1/2 md:pr-10">
+              <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+                <h3 class="text-xl font-semibold text-[#1DCD9F]">Bachelor of Engineering – AI & Data Science</h3>
+                <span class="text-sm text-gray-400">Annasaheb Dange College of Engineering and Technology, Ashta (2023 - 2027)</span>
+                <p class="mt-2 text-gray-300">Focused on AI, data science, and building intelligent tools and web applications.</p>
+              </div>
+            </div>
+            <div class="md:w-1/2"></div>
+          </div>
+
+          <!-- Timeline Card 3 - Right -->
+          <div class="relative mb-16 md:mb-24 md:flex justify-end">
+            <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+            <div class="md:w-1/2"></div>
+            <div class="md:w-1/2 md:pl-10">
+              <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+                <h3 class="text-xl font-semibold text-[#1DCD9F]">High School – Science (PCM)</h3>
+                <span class="text-sm text-gray-400">Sangli highschool, Sangli (2022)</span>
+                <p class="mt-2 text-gray-300">Developed a strong foundation in mathematics and science, sparking an early interest in technology and AI.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="tech-stack" class="bg-black text-white py-20 px-6 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto flex flex-col gap-20">
+        <!-- Programming Languages -->
+        <div class="flex md:flex-row flex-col gap-8 items-start" id="programming-languages">
+          <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+            <div class="category-label cursor-pointer hover:text-white transition">Programming Languages</div>
+          </div>
+          <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="w-6 h-6"><span class="text-lg">C</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-6 h-6"><span class="text-lg">C++</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-6 h-6"><span class="text-lg">HTML5</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6"><span class="text-lg">JavaScript</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="w-6 h-6"><span class="text-lg">PHP</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-6 h-6"><span class="text-lg">Python</span></div>
+            <div class="flex items-center gap-2"><i class="fas fa-database"></i><span class="text-lg">SQL</span></div>
+          </div>
+        </div>
+        <!-- Libraries & Frameworks -->
+        <div class="flex md:flex-row flex-col gap-8 items-start" id="libraries-frameworks">
+          <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+            <div class="category-label cursor-pointer hover:text-white transition">🧩 Libraries & Frameworks</div>
+          </div>
+          <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-6 h-6"><span class="text-lg">LangChain</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-6 h-6"><span class="text-lg">LlamaIndex</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" class="w-6 h-6"><span class="text-lg">Matplotlib</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" class="w-6 h-6"><span class="text-lg">NumPy</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" class="w-6 h-6"><span class="text-lg">Pandas</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" class="w-6 h-6"><span class="text-lg">Streamlit</span></div>
+          </div>
+        </div>
+        <!-- AI & Tools -->
+        <div class="flex md:flex-row flex-col gap-8 items-start" id="ai-tools">
+          <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+            <div class="category-label cursor-pointer hover:text-white transition">🤖 AI & Tools</div>
+          </div>
+          <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+            <div class="flex items-center gap-2"><span class="inline-block w-6 h-6 bg-white rounded p-0.5 flex items-center justify-center"><span class="text-black font-bold text-base">G</span></span><span class="text-lg">Gemini (Google)</span></div>
+            <div class="flex items-center gap-2"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" class="w-6 h-6 bg-white rounded p-0.5"><span class="text-lg">Hugging Face</span></div>
+            <div class="flex items-center gap-2"><span class="inline-block w-6 h-6 bg-white rounded p-0.5 flex items-center justify-center"><span class="text-black font-bold text-base">O</span></span><span class="text-lg">OpenAI</span></div>
+          </div>
+        </div>
+        <!-- Databases -->
+        <div class="flex md:flex-row flex-col gap-8 items-start" id="databases">
+          <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+            <div class="category-label cursor-pointer hover:text-white transition">🗄️ Databases</div>
+          </div>
+          <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-6 h-6"><span class="text-lg">MySQL</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" class="w-6 h-6"><span class="text-lg">Oracle</span></div>
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-6 h-6"><span class="text-lg">MongoDB</span></div>
+          </div>
+        </div>
+        <!-- Developer Tools -->
+        <div class="flex md:flex-row flex-col gap-8 items-start" id="developer-tools">
+          <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+            <div class="category-label cursor-pointer hover:text-white transition">🛠️ Developer Tools</div>
+          </div>
+          <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+            <div class="flex items-center gap-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-6 h-6"><span class="text-lg">Git</span></div>
+            <div class="flex items-center gap-2"><img src="./assets/github-logo.png" class="w-6 h-6"><span class="text-lg">GitHub</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="relative bg-black text-white py-20 px-6 overflow-hidden">
+      <div class="max-w-6xl mx-auto text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">Projects</h2>
+        <p class="text-gray-300 text-lg">Some of the things I've built.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+        <!-- InstaVibe -->
+        <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">InstaVibe</h3>
+            <p class="text-gray-700 mb-4">AI-powered bio generator built using Streamlit and LangChain. Instantly create attractive bios for social media or professional profiles with a click!</p>
+            <div class="flex flex-wrap gap-3 mb-4">
+              <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">Streamlit</span>
+              <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">LangChain</span>
+              <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">Python</span>
+            </div>
+            <div class="flex gap-4">
+              <a href="https://instavibe.streamlit.app" target="_blank" class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">Live Demo</a>
+              <a href="https://github.com/Aditya-padale/Instavibe" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- AI-GenStream -->
+        <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">AI-GenStream</h3>
+            <p class="text-gray-700 mb-4">Analyze, transcribe, and transform images, audio, video, and documents — all in real-time using Gemini 1.5! Built with Streamlit, LangChain, and Gemini Pro, it fuses vision, audio, and text intelligence into one seamless interface!</p>
+            <div class="flex flex-wrap gap-3 mb-4">
+              <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">Streamlit</span>
+              <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">LangChain</span>
+              <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">Gemini Pro</span>
+            </div>
+            <div class="flex gap-4">
+              <a href="https://ai-genstream.streamlit.app" target="_blank" class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">Live Demo</a>
+              <a href="https://github.com/Aditya-padale/AI-GenStream" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- AI Calculator Canvas -->
+        <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">AI Calculator Canvas</h3>
+            <p class="text-gray-700 mb-4">Draw any math, physics, chemistry problem or even real-world objects — and Gemini interprets and solves it in real-time. Inspired by Apple’s Math Notes, this project is built using Streamlit, LangChain, and Gemini Pro Vision.</p>
+            <div class="flex flex-wrap gap-3 mb-4">
+              <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">Streamlit</span>
+              <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">LangChain</span>
+              <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">Gemini Pro Vision</span>
+            </div>
+            <div class="flex gap-4">
+              <a href="https://ai-calculator-canvas.streamlit.app" target="_blank" class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">Live Demo</a>
+              <a href="https://github.com/Aditya-padale/AI-Calculator" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="bg-black text-white py-20 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-10 text-center text-[#1DCD9F]">Certificates</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- Cloud Computing Certificate -->
+          <div class="bg-[#181818] rounded-xl shadow-lg p-6 flex flex-col items-start border border-[#1DCD9F]">
+            <h3 class="text-2xl font-semibold mb-2 flex items-center gap-2">
+              <i class="fas fa-cloud text-[#1DCD9F]"></i> Cloud Computing
+            </h3>
+            <p class="text-gray-300 mb-4">Completed NPTEL certification in Cloud Computing, gaining expertise in cloud service models, deployment strategies, and virtualization concepts.</p>
+            <a href="./assets/Cloud%20Computing.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-[#1DCD9F] text-black font-semibold rounded hover:bg-[#17b890] transition">
+              <i class="fas fa-file-pdf"></i> View Certificate (PDF)
+            </a>
+          </div>
+          <!-- Foundations of AI Certificate -->
+          <div class="bg-[#181818] rounded-xl shadow-lg p-6 flex flex-col items-start border border-[#1DCD9F]">
+            <h3 class="text-2xl font-semibold mb-2 flex items-center gap-2">
+              <i class="fas fa-robot text-[#1DCD9F]"></i> Foundations of Artificial Intelligence
+            </h3>
+            <p class="text-gray-300 mb-4">Earned NPTEL certification in Foundations of Artificial Intelligence, covering core AI principles including search algorithms, logic, and knowledge representation.</p>
+            <a href="./assets/Fundamentals%20of%20Artificial%20Intelligence.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-[#1DCD9F] text-black font-semibold rounded hover:bg-[#17b890] transition">
+              <i class="fas fa-file-pdf"></i> View Certificate (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-black text-white py-20 px-6 flex items-center justify-center">
+      <div class="w-full max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-start">
+        <!-- Contact Info -->
+        <div class="md:w-1/3 w-full flex flex-col gap-4 mb-8 md:mb-0">
+          <a href="mailto:adityapadale25@gmail.com" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#181818] text-[#1DCD9F] hover:bg-[#1DCD9F] hover:text-black transition-colors duration-200 text-base shadow" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-envelope text-lg"></i>
+            <span>adityapadale25@gmail.com</span>
+          </a>
+          <a href="tel:+919881861784" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#181818] text-[#1DCD9F] hover:bg-[#1DCD9F] hover:text-black transition-colors duration-200 text-base shadow">
+            <i class="fas fa-phone text-lg"></i>
+            <span>+91 9881861784</span>
+          </a>
+          <a href="https://linkedin.com/in/aditya" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#181818] text-[#1DCD9F] hover:bg-[#1DCD9F] hover:text-black transition-colors duration-200 text-base shadow" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin text-lg"></i>
+            <span>linkedin.com/in/aditya</span>
+          </a>
+          <a href="https://github.com/Aditya-padale" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#181818] text-[#1DCD9F] hover:bg-[#1DCD9F] hover:text-black transition-colors duration-200 text-base shadow" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github text-lg"></i>
+            <span>github.com/Aditya-padale</span>
+          </a>
+        </div>
+        <!-- Contact Form -->
+        <div class="md:w-2/3 w-full bg-[#111] rounded-xl p-6 shadow-lg border border-[#1DCD9F]">
+          <form id="contact-form" class="flex flex-col gap-4">
+            <input type="text" name="name" placeholder="Your Name" required class="px-4 py-2 rounded-lg border border-[#1DCD9F] bg-black text-white focus:border-[#1DCD9F] outline-none" />
+            <input type="email" name="email" placeholder="Your Email" required class="px-4 py-2 rounded-lg border border-[#1DCD9F] bg-black text-white focus:border-[#1DCD9F] outline-none" />
+            <textarea name="message" placeholder="Your Message" required class="px-4 py-2 rounded-lg border border-[#1DCD9F] bg-black text-white focus:border-[#1DCD9F] outline-none resize-none min-h-[100px]"></textarea>
+            <button type="submit" class="px-5 py-2 rounded-lg font-semibold bg-[#1DCD9F] text-black transition-all duration-300 hover:bg-[#17b890] focus:outline-none shadow mt-2">Send Message</button>
+            <div id="form-success" class="hidden text-green-400 font-semibold mt-2 text-center"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <a href="mailto:adityapadale25@gmail.com?subject=Let's Connect&body=Hi Aditya,%0D%0A%0D%0AI wanted to get in touch with you..." class="fixed-email" title="Mail Me">adityapadale25@gmail.com</a>
+
+    <!-- ...existing code for scripts... -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@motionone/dom/dist/motion.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/motion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('contact-form');
+        const successMsg = document.getElementById('form-success');
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          const formData = new FormData(form);
+          const data = Object.fromEntries(formData.entries());
+          try {
+            const response = await fetch('https://formspree.io/f/xovwneyy', {
+              method: 'POST',
+              headers: { 'Accept': 'application/json' },
+              body: formData
+            });
+            if (response.ok) {
+              form.reset();
+              successMsg.textContent = "🎉 Message sent! We'll get back to you faster than a caffeinated AI. Thanks for reaching out!";
+              successMsg.classList.remove('hidden');
+            } else {
+              successMsg.textContent = "Oops! Something went wrong. Try again or email me directly.";
+              successMsg.classList.remove('hidden');
+            }
+          } catch {
+            successMsg.textContent = "Oops! Something went wrong. Try again or email me directly.";
+            successMsg.classList.remove('hidden');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
