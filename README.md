@@ -32,7 +32,7 @@ A modern, responsive personal portfolio website showcasing my work as a full-sta
 
 ## 📸 Live Preview
 
-👉 [Live Demo]
+👉 [https://aditya-padale.github.io/Portfolio_2/]
 
 
 
